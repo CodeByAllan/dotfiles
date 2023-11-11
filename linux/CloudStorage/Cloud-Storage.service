@@ -1,0 +1,10 @@
+[Unit]
+Description=Cloud storage assembly service
+
+[Service]
+ExecStart=/bin/Cloud-StorageStart.sh
+Restart=always
+User=UserName
+
+[Install]
+WantedBy=multi-user.target
